@@ -7,7 +7,6 @@ $(document).ready(function() {
     for (var numbers = 1; numbers <= entry; numbers++) {
       allNums.push(numbers);
     }
-    console.log(allNums);
 
     var newNums = allNums.map(function(newNum) {
       if (newNum % 3 === 0 && newNum % 5 === 0) {
@@ -21,6 +20,10 @@ $(document).ready(function() {
       }
     });
 
-  $("#output").text(newNums);
+    newNums.forEach(function(newNum) {
+      $("ul").append("<li>" + newNum + "</li>")
+    });
+
+    $("#output").show();
   });
 });
