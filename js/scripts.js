@@ -12,12 +12,10 @@ $(document).ready(function() {
     var newNums = allNums.map(function(newNum) {
       if (newNum % 3 === 0 && newNum % 5 === 0) {
         return "pingpong"
-      // } else if {
-      //   (newNum % 3 === 0) {
-      //   return "ping"
-      // } else if {
-      //   (newNum % 5 === 0) {
-      //   return "pong"
+      } else if (newNum % 3 === 0) {
+        return "ping"
+      } else if (newNum % 5 === 0) {
+        return "pong"
       } else {
         return newNum;
       }
