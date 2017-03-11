@@ -4,9 +4,29 @@
 
 #### By _**Jasun Feddema**_
 
-## Description
+## Specifications
 
-_This webpage will require you to enter a number.  A list of number will be output, but you'll notice something funny: numbers divisible by 3 will be replaced with "ping"; numbers divisible by 5 will be replaced with "pong"; and numbers divisible by 3 an 5 will be replaced with "pingpong". Enjoy!_
+* _It can count up to the provided number:_
+  * Example Input: 3
+  * Example Output: [1,2,3]
+* _It can recognize numbers divisible by 3 and 5 up to the provided number, and replace with "pingpong"_
+  * Example Input: 15
+  * Example Output: [1...13,14,pingpong]
+* _It can recognize numbers divisible by 3 up to the provided number and replace with "ping"_
+  * Example Input: 5
+  * Example Output: [1,2,ping,4,5]
+* _It can recognize numbers divisible by 5 up to the provided number and replace with "pong"_
+  * Example Input: 5
+  * Example Output: [1,2,3,4,pong]
+* _It can recognize numbers divisible by 3, numbers divisible by 5, and divisible by 3 and 5 (up to the provided number) - and replace each with "ping", "pong", and "pingpong" respectively._
+  * Example Input: 15
+  * Example Output: [1,2,ping,4,pong,ping....13,14,pingpong]
+* _It can display the output in an unordered list._
+  * Example Input: 3
+  * Example Output:
+    * 1
+    * 2
+    * ping
 
 ## Setup/Installation Requirements
 
